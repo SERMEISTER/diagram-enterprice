@@ -1,0 +1,36 @@
+.button-add{
+  background-color: white;
+  margin-left: 20px;
+  border: solid 1px #dfe2e6;
+  color: blue;
+  height: 40px;
+  border-radius: 3px;
+}
+.button-add:hover{
+  background-color: white;
+  color: black;
+}
+
+.button-del-class{
+  background-color: white;
+  margin-left: 20px;
+  border: solid 1px #dfe2e6;
+  color: blue;
+  height: 40px;
+  border-radius: 3px;
+}
+
+.main-div
+{
+  position: relative;
+  height: 120px;
+}
+.class-diagram
+{
+  height: 100%;
+  background-color: red; 
+}
+.enterprice-name
+{
+  text-align: center;
+}

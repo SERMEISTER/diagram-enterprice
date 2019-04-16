@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src='./source.js'></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>LR5_T1</title>
+    </head>
+    <body onload="updateDiagram()">
+        <table id="my-table" class="table table-striped">
+          <thead class="thead-dark">
+              <tr>
+              <th scope="col">#</th>
+              <th scope="col">Підприємство</th>
+              <th scope="col">Вартість послуг</th>
+
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><input type="Button" value="Видалити" class="button-del-class" id="button-delete-id" onclick="deleteEnterprice(document.getElementById('button-delete-id'))"></th>
+              <td contenteditable onblur="updateDiagram()">AO-1</td>
+              <td contenteditable onblur="updateDiagram()" onkeypress="isInputNumber(event)">10</td>
+            </tr>
+            <tr>
+              <th scope="row"><input type="Button" value="Видалити" class="button-del-class" id="button-delete-id" onclick="deleteEnterprice(this)"></th>
+              <td contenteditable onblur="updateDiagram()">AO-2</td>
+              <td contenteditable onblur="updateDiagram()" onkeypress="isInputNumber(event)">20</td>
+            </tr>
+            <tr>
+              <th scope="row"><input type="Button" value="Видалити" class="button-del-class" id="button-delete-id" onclick="deleteEnterprice(this)"></th>
+              <td contenteditable onblur="updateDiagram()">AO-3</td>
+              <td contenteditable onblur="updateDiagram()" onkeypress="isInputNumber(event)">30</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr />
+
+        <input type="Button" value="Додати" class="button-add" onclick="addEnterprice('my-table'); return false;">
+        <h2 class="m-3">Діаграма</h1>
+          <div id="id-diagram" class="main-div d-flex align-items-end  m-3">
+            <div class="class-diagram m-2 flex-fill bg-primary" ></div>
+            <div class="class-diagram m-2 flex-fill bg-success" ></div>
+            <div class="class-diagram m-2 flex-fill bg-info" ></div>
+          </div>
+          <div id="id-enterprice-name" class="enterprice-name d-flex align-items-end ">
+            <div class="m-2 flex-fill" >AO-1</div>
+            <div class="m-2 flex-fill" >AO-2</div>
+            <div class="m-2 flex-fill" >AO-3</div>
+          </div>
+
+    </body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html> 
